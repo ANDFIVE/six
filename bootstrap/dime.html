@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<body>
+    <canvas id="can" width="400" height="400" style="background: Black"></canvas>
+    <!--<script>
+       //贪吃蛇
+        var sn = [42, 41],
+            dz = 43,
+            fx = 1,
+            n, ctx = document.getElementById("can").getContext("2d");
+
+        function draw(t, c) {
+            ctx.fillStyle = c;
+            ctx.fillRect(t % 20 * 20 + 1, ~~(t / 20) * 20 + 1, 18, 18);
+        }
+        document.onkeydown = function(e) {
+            fx = sn[1] - sn[0] == (n = [-1, -20, 1, 20][(e || event).keyCode - 37] || fx) ? fx : n
+        };
+        ! function() {
+            sn.unshift(n = sn[0] + fx);
+            if (sn.indexOf(n, 1) > 0 || n < 0 || n > 399 || fx == 1 && n % 20 == 0 || fx == -1 && n % 20 == 19)
+                return alert("GAME OVER");
+            draw(n, "Lime");
+            if (n == dz) {
+                while (sn.indexOf(dz = ~~(Math.random() * 400)) >= 0);
+                draw(dz, "Yellow");
+            } else
+                draw(sn.pop(), "Black");
+            setTimeout(arguments.callee, 130);
+        }();
+ 
+    </script>-->
+
+    <!--<script>
+       不重复取出数组中的数据
+        var int = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
+        var f = [];
+        for (var i = int.length; i > 0; i--) {
+            var index = Math.floor((Math.random() * int.length));
+            console.log(int[index]);
+            f.push(int[index]);
+            int.splice(index, 1);
+        }
+        console.log(f);
+    </script>-->
+
+    <!--  <script>
+        //给定一个 32 位有符号整数，将整数中的数字进行反转
+        //只能存储 32 位有符号整数，其数值范围是 [−231,  231 − 1]。根据这个假设，如果反转后的整数溢出，则返回 0。
+        var reverse = function(x) {
+            var zhi = 0;
+            if (x > 0 && x < Math.pow(2, 31) - 1) {
+                zhi = a(x, zhi);
+                console.log(zhi);
+                return zhi;
+            } else if (x < 0 && x > -(Math.pow(2, 31))) {
+                x = x * -1;
+                zhi = a(x, zhi);
+                console.log(zhi);
+                return -zhi;
+            } else {
+                return zhi;
+            }
+        };
+
+        function a(x, zhi) {
+            var bo = true;
+            while (x > 0) {
+                if (x % 10 == 0 && bo) {
+                    x = x / 10;
+                    x = Math.floor(x);
+                } else {
+                    bo = false;
+                    zhi = zhi * 10;
+                    zhi += x % 10;
+                    x = x / 10;
+                    x = Math.floor(x);
+                }
+            }
+            return zhi;
+        }
+        reverse(1534236469);
+    </script>-->
+
+    <script>
+        var lengthOfLongestSubstring = function(s) {
+            var zf = [];
+            var zs = "";
+            for (var i = 0; i < s.length; i++) {
+               
+            }
+
+        };
+        lengthOfLongestSubstring("wqhwdasdasdcdcdcccn");
+
+    </script>
+</body>
+
+</html>
