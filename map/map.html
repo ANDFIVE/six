@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--  <base href="http://localhost:8080//">-->
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			html,body{
+				margin: 0px;height: 100%;
+			}
+			#map{
+				padding: 0rem;
+				margin: 0;
+				height: 100%;
+				width: 100%;
+				position: relative;
+				z-index: 1;
+			}
+		</style>
+		<link rel="stylesheet" href="https://js.arcgis.com/3.28/esri/css/esri.css">
+		<script src="https://js.arcgis.com/3.28/init.js"></script>
+	</head>
+	<script>
+		require(["esri/map"], function(Map) {
+			var map = new Map("map", {
+				center: [118, 34.5],
+				zoom: 8,
+				basemap: "topo"
+			});
+		});
+	</script>
+
+	<body>
+		<div id="map" style="height: 100%;width: 100%;"></div>
+</html>
